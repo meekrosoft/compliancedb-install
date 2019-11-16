@@ -1,0 +1,20 @@
+version: '3'
+networks:
+  test:
+
+services:
+  server:
+    image: registry.gitlab.com/compliancedb/compliancedb/server
+    volumes:
+    - cdb_data:/cdb_data
+
+  hub:
+    ports:
+      - "80:80"
+    image: registry.gitlab.com/compliancedb/compliancedb/hub
+
+  web:
+    image: registry.gitlab.com/compliancedb/compliancedb/web
+
+volumes:
+  cdb_data:
