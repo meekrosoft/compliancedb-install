@@ -6,7 +6,7 @@
 
 ## Step 2 - Retrieve images
 
-Use the deploy keys provided with your licence to pull the images
+Use the docker registry credentials provided with your licence to pull the images
 
     docker login registry.gitlab.com
     docker-compose pull
