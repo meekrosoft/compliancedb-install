@@ -13,6 +13,8 @@ services:
 
   web:
     image: registry.gitlab.com/compliancedb/compliancedb/web
+    environment:
+    - IS_ON_PREM=TRUE
 
 volumes:
   cdb_data:
