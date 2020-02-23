@@ -9,7 +9,7 @@ services:
   hub:
     ports:
       - "80:80"
-    image: registry.gitlab.com/compliancedb/compliancedb/hub
+    image: registry.gitlab.com/compliancedb/compliancedb/nginx
 
   web:
     image: registry.gitlab.com/compliancedb/compliancedb/web
@@ -18,3 +18,5 @@ services:
 
 volumes:
   cdb_data:
+
+
