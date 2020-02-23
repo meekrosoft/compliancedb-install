@@ -6,7 +6,7 @@ services:
     volumes:
     - cdb_data:/cdb_data
 
-  hub:
+  nginx:
     ports:
       - "80:80"
     image: registry.gitlab.com/compliancedb/compliancedb/nginx
